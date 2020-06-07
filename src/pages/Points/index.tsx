@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, Image, ScrollView, SafeAreaView, Platform } from 'react-native';
 import Constants from 'expo-constants'
 import { Feather as Icon } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
@@ -21,7 +21,7 @@ const Points = () => {
   }
 
   return(
-  <>
+  <SafeAreaView style={styles.safeAreaView}>
     <View style={ styles.container}>
 
       <TouchableOpacity onPress={handleNavigateBack}>
@@ -95,15 +95,21 @@ const Points = () => {
         </TouchableOpacity>
       </ScrollView>
     </View>
-  </>
+  </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
+
+  safeAreaView:{
+    flex:1,
+    paddingVertical: Platform.OS === "android" ? 35 : 0
+  },
+
   container: {
     flex: 1,
     paddingHorizontal: 32,
-    paddingTop: 20 + Constants.statusBarHeight,
+    paddingTop: 20,
   },
 
   title: {
