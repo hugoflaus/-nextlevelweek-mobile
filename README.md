@@ -1,5 +1,5 @@
-<h1  style=" text-align: center;">
-  <img style=" text-align: center" src="https://ik.imagekit.io/vglod4qqhy/Captura_de_tela_de_2020-06-11_08-06-17_9KyNUYRpQ.png">
+<h1>
+  <img src="https://ik.imagekit.io/vglod4qqhy/Captura_de_tela_de_2020-06-11_08-06-17-removebg-preview_gpdcl-5Tm.png">
 </h1>
 
 ## 📄Sobre
